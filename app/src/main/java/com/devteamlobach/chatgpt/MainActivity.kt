@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
         webView.settings.javaScriptEnabled = true
         webView.settings.javaScriptCanOpenWindowsAutomatically = true
 
-        webView.loadUrl("https://92.51.36.153/")
+        webView.loadUrl("https://92.51.36.153/chat/")
 
 
         webView.settings.setSupportZoom(true)
