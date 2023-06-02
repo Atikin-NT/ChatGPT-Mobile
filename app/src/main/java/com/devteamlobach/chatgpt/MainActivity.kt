@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.net.http.SslError
 import android.os.Bundle
 import android.webkit.SslErrorHandler
+import android.webkit.WebSettings
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.appcompat.app.AppCompatActivity
@@ -50,6 +51,7 @@ class MainActivity : AppCompatActivity() {
         webView.settings.domStorageEnabled =true
         webView.settings.javaScriptEnabled = true
         webView.settings.javaScriptCanOpenWindowsAutomatically = true
+        webView.settings.cacheMode = WebSettings.LOAD_DEFAULT
 
         webView.loadUrl("https://92.51.36.153/chat")
 
